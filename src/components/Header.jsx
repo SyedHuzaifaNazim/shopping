@@ -15,7 +15,7 @@ const Header = () => {
       {/* Top Bar */}
       <div className="bg-indigo-900 text-white py-2 px-4 text-sm">
         <div className="container mx-auto flex justify-between">
-          <div>Welcome to Perfume Shop - Pakistan's Most Affordable Online Store</div>
+          <div>Welcome to SASTI Shopping - Pakistan's Most Affordable Online Store</div>
           <div className="flex space-x-4">
             <span>Help</span>
             <span>Track Order</span>
