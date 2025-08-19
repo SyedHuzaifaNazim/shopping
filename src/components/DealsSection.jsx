@@ -4,10 +4,10 @@ import { FiClock } from 'react-icons/fi';
 
 const DealsSection = () => {
   const deals = [
-    { name: 'Smartphones', discount: 'Up to 40% off' },
-    { name: 'Laptops', discount: 'Up to 30% off' },
-    { name: 'Headphones', discount: 'Up to 60% off' },
-    { name: 'Smart Watches', discount: 'Up to 55% off' },
+    { name: 'Smartphones', discount: 'Up to 40% off', image: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80' },
+    { name: 'Laptops', discount: 'Up to 30% off', image: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80' },
+    { name: 'Headphones', discount: 'Up to 60% off', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80' },
+    { name: 'Smart Watches', discount: 'Up to 55% off', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80' },
   ];
 
   return (
@@ -24,7 +24,7 @@ const DealsSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {deals.map((deal, index) => (
             <div key={index} className="bg-white rounded-lg shadow overflow-hidden">
-              <div className="bg-gray-200 border-2 border-dashed w-full h-48" />
+              <img src={deal.image} alt={deal.name} className="w-full h-48 object-cover" />
               <div className="p-4">
                 <h3 className="font-bold text-lg mb-1">{deal.name}</h3>
                 <p className="text-indigo-700 font-medium">{deal.discount}</p>
